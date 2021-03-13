@@ -14,8 +14,7 @@ namespace WebApplication01.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-
+        
         public string Saudacao()
         {
             return "Olá bom dia!";
@@ -40,6 +39,9 @@ namespace WebApplication01.Controllers
             return Content("Olá aqui são apresentados os contactos");
             //content retorn um ContentResult que deriva de IActionResult
         }
+
+        
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
