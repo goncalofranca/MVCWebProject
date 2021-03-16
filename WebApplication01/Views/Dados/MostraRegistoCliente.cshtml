@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Registo do Cliente";
+}
+<h1>@ViewData["Title"]</h1>
+<br />
+<br />
+<h6>A receber dados do controller até à view</h6>
+
+@{
+    var dataID = ViewData["id"];
+    var dataNome = ViewData["nome"];
+    var dataMorada = ViewData["morada"];
+    var dataIdade = ViewData["idade"];
+}
+<br />
+<br />
+<h4>Id:</h4>
+<h5>@dataID</h5>
+<br />
+<br />
+<h4>Name:</h4>
+<h5>@dataNome</h5>
+<br />
+<br />
+<h4>Morada:</h4>
+<h5>@dataMorada</h5>
+<br />
+<br />
+<h4>Idade:</h4>
+<h5>@dataIdade</h5>   

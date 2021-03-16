@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Regista Clientes";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+        @* try change the method get to post, and see what happens int the url box
+            it can no longer be edited so that the ClienteRegistado change
+            *@
+       <form action="/Dados/MostraRegistoCliente" method="get">
+        <fieldset>
+            <legend class="display-4">Registo</legend>
+            <label class="display-5" for="id">ID:</label> <input id="id" name="id" type="number" /><br />
+            <label class="display-5" for="nome">Nome:</label> <input id="nome" name="Nome" type="text" /><br />
+            <label class="display-5" for="morada">Morada:</label> <input id="morada" name="morada" type="text" /><br />
+            <label class="display-5" for="idade">Idade:</label> <input id="idade" name="idade" type="number" /><br />
+        </fieldset>
+        <input type="submit" value="Registar" />
+    </form>
+</div>
